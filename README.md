@@ -1,6 +1,6 @@
 # Circumflexus
 
-[![Release](https://img.shields.io/badge/release-1.0-brightgreen.svg?style=flat-square)](https://apps.getpebble.com/applications/55829887389bcc0b0f00007c)
+[![Release](https://img.shields.io/badge/release-1.0-brightgreen.svg?style=flat-square)](https://apps.getpebble.com/applications/55cc84672033826bd2000004)
 [![Issues](https://img.shields.io/github/issues/Robinhuett/Circumflexus.svg?style=flat-square)](https://github.com/Robinhuett/Circumflexus/issues)
 
 Watchface for Pebble Time. This is based on the design of [TimeDrol](https://apps.getpebble.com/en_US/application/5581620e8ec60e2319000014) from **X.adA**
@@ -17,6 +17,7 @@ Watchface for Pebble Time. This is based on the design of [TimeDrol](https://app
 ## Things I may add or change late
 
 * Use a lighter font (Segoe UI?)
+* Adding support for Classic Pebble.
 
 ## Credits
 
