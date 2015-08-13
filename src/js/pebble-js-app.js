@@ -26,28 +26,35 @@ Pebble.addEventListener("ready", function(e) {
 });
 
 Pebble.addEventListener("showConfiguration", function(e) {
-	//console.log("PblKit_called --- showConfiguration");
-	var localoptions = JSON.parse(localStorage.getItem("localOptions"));
-	console.log('http://robinhuett.github.io/TimeCirc/config.html' + '?' +
-				'color_text_select=' + localoptions.KEY_COLOR_TEXT + '&' + 
-				'color_indicator_select=' + localoptions.KEY_COLOR_INDICATOR + '&' + 
-				'color_ring_1_select=' + localoptions.KEY_COLOR_RING_1 + '&' + 
-				'color_ring_2_select=' + localoptions.KEY_COLOR_RING_2 + '&' + 
-				'color_bg_in_select=' + localoptions.KEY_COLOR_BG_IN + '&' + 
-				'color_bg_out_select=' + localoptions.KEY_COLOR_BG_OUT + '&' + 
-				'show_day_select=' + localoptions.KEY_SHOW_DAY + '&' + 
-				'show_date_select=' + localoptions.KEY_SHOW_DATE + '&' + 
-				'vibe_bt_select=' + localoptions.KEY_VIBE_BT);
-	Pebble.openURL('http://robinhuett.github.io/TimeCirc/config.html' + '?' +
-				'color_text_select=' + localoptions.KEY_COLOR_TEXT + '&' + 
-				'color_indicator_select=' + localoptions.KEY_COLOR_INDICATOR + '&' + 
-				'color_ring_1_select=' + localoptions.KEY_COLOR_RING_1 + '&' + 
-				'color_ring_2_select=' + localoptions.KEY_COLOR_RING_2 + '&' + 
-				'color_bg_in_select=' + localoptions.KEY_COLOR_BG_IN + '&' + 
-				'color_bg_out_select=' + localoptions.KEY_COLOR_BG_OUT + '&' + 
-				'show_day_select=' + localoptions.KEY_SHOW_DAY + '&' + 
-				'show_date_select=' + localoptions.KEY_SHOW_DATE + '&' + 
-				'vibe_bt_select=' + localoptions.KEY_VIBE_BT);
+	console.log("PblKit_called --- showConfiguration");
+	var localoptions;
+	if (localStorage.getItem("localOptions") === null) {
+		console.log('http://robinhuett.github.io/Circumflexus/config.html');
+		Pebble.openURL('http://robinhuett.github.io/Circumflexus/config.html');
+	}
+	else {
+		localoptions = JSON.parse(localStorage.getItem("localOptions"));
+		console.log('http://robinhuett.github.io/Circumflexus/config.html' + '?' +
+					'color_text_select=' + localoptions.KEY_COLOR_TEXT + '&' + 
+					'color_indicator_select=' + localoptions.KEY_COLOR_INDICATOR + '&' + 
+					'color_ring_1_select=' + localoptions.KEY_COLOR_RING_1 + '&' + 
+					'color_ring_2_select=' + localoptions.KEY_COLOR_RING_2 + '&' + 
+					'color_bg_in_select=' + localoptions.KEY_COLOR_BG_IN + '&' + 
+					'color_bg_out_select=' + localoptions.KEY_COLOR_BG_OUT + '&' + 
+					'show_day_select=' + localoptions.KEY_SHOW_DAY + '&' + 
+					'show_date_select=' + localoptions.KEY_SHOW_DATE + '&' + 
+					'vibe_bt_select=' + localoptions.KEY_VIBE_BT);
+		Pebble.openURL('http://robinhuett.github.io/Circumflexus/config.html' + '?' +
+					'color_text_select=' + localoptions.KEY_COLOR_TEXT + '&' + 
+					'color_indicator_select=' + localoptions.KEY_COLOR_INDICATOR + '&' + 
+					'color_ring_1_select=' + localoptions.KEY_COLOR_RING_1 + '&' + 
+					'color_ring_2_select=' + localoptions.KEY_COLOR_RING_2 + '&' + 
+					'color_bg_in_select=' + localoptions.KEY_COLOR_BG_IN + '&' + 
+					'color_bg_out_select=' + localoptions.KEY_COLOR_BG_OUT + '&' + 
+					'show_day_select=' + localoptions.KEY_SHOW_DAY + '&' + 
+					'show_date_select=' + localoptions.KEY_SHOW_DATE + '&' + 
+					'vibe_bt_select=' + localoptions.KEY_VIBE_BT);
+	}
 });
 
 Pebble.addEventListener("webviewclosed", function(e) {
