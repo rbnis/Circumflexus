@@ -19,13 +19,7 @@
     "resources": {
         "media": [
             {
-                "file": "images/menu_icon.png",
-                "menuIcon": true,
-                "name": "IMAGE_MENU_ICON",
-                "type": "png"
-            },
-            {
-                "characterRegex": "[0-9:]",
+                "characterRegex": "[0-9a-zA-Z/:]",
                 "file": "fonts/Roboto-Regular.ttf",
                 "name": "FONT_ROBOTO_REGULAR_38",
                 "type": "font"
@@ -35,6 +29,12 @@
                 "file": "fonts/Roboto-Regular.ttf",
                 "name": "FONT_ROBOTO_REGULAR_16",
                 "type": "font"
+            },
+            {
+                "file": "images/menu_icon.png",
+                "menuIcon": true,
+                "name": "IMAGE_MENU_ICON",
+                "type": "png"
             }
         ]
     },

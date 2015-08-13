@@ -29,8 +29,8 @@ Pebble.addEventListener("showConfiguration", function(e) {
 	console.log("PblKit_called --- showConfiguration");
 	var localoptions;
 	if (localStorage.getItem("localOptions") === null) {
-		console.log('http://robinhuett.github.io/Circumflexus/config.html');
-		Pebble.openURL('http://robinhuett.github.io/Circumflexus/config.html');
+		console.log('http://robinhuett.github.io/Circumflexus/config.html?first_start=jup');
+		Pebble.openURL('http://robinhuett.github.io/Circumflexus/config.html?first_start=jup');
 	}
 	else {
 		localoptions = JSON.parse(localStorage.getItem("localOptions"));
