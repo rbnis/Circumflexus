@@ -1,2 +1,2 @@
-# Circumflexus
-Watchface for Pebble Time.
+# Circumflexus Config Page
+Configuration page for Circumflexus Watchface for Pebble Time.
