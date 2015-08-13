@@ -108,25 +108,48 @@
 			}
 	
 			function fillOptions() {
-				var colorTextSelect = document.getElementById("color_text_select");
-				var colorIndicatorSelect = document.getElementById("color_indicator_select");
-				var colorRing1Select = document.getElementById("color_ring_1_select");
-				var colorRing2Select = document.getElementById("color_ring_2_select");
-				var colorBgInSelect = document.getElementById("color_bg_in_select");
-				var colorBgOutSelect = document.getElementById("color_bg_out_select");
-				var showDaySelect = document.getElementById("show_day_select");
-				var showDateSelect = document.getElementById("show_date_select");
-				var vibeBtSelect = document.getElementById("vibe_bt_select");
-				
-				colorTextSelect.value = getQueryVariable("color_text_select");
-				colorIndicatorSelect.value = getQueryVariable("color_indicator_select");
-				colorRing1Select.value = getQueryVariable("color_ring_1_select");
-				colorRing2Select.value = getQueryVariable("color_ring_2_select");
-				colorBgInSelect.value = getQueryVariable("color_bg_in_select");
-				colorBgOutSelect.value = getQueryVariable("color_bg_out_select");
-				showDaySelect.checked = (getQueryVariable("show_day_select") === 'true');
-				showDateSelect.checked = (getQueryVariable("show_date_select") === 'true');
-				vibeBtSelect.checked = (getQueryVariable("vibe_bt_select") === 'true');
+				if (getQueryVariable("first_start") === "jup") {
+					var colorTextSelect = document.getElementById("color_text_select");
+					var colorIndicatorSelect = document.getElementById("color_indicator_select");
+					var colorRing1Select = document.getElementById("color_ring_1_select");
+					var colorRing2Select = document.getElementById("color_ring_2_select");
+					var colorBgInSelect = document.getElementById("color_bg_in_select");
+					var colorBgOutSelect = document.getElementById("color_bg_out_select");
+					var showDaySelect = document.getElementById("show_day_select");
+					var showDateSelect = document.getElementById("show_date_select");
+					var vibeBtSelect = document.getElementById("vibe_bt_select");
+					
+					colorTextSelect.value = "0xFFFFFF";
+					colorIndicatorSelect.value = "0xFFFFFF";
+					colorRing1Select.value = "0xFFFFFF";
+					colorRing2Select.value = "0x00AAFF";
+					colorBgInSelect.value = "0x000055";
+					colorBgOutSelect.value = "0x0055AA";
+					showDaySelect.checked = "true";
+					showDateSelect.checked = "true";
+					vibeBtSelect.checked = "true";
+				}
+				else {
+					var colorTextSelect = document.getElementById("color_text_select");
+					var colorIndicatorSelect = document.getElementById("color_indicator_select");
+					var colorRing1Select = document.getElementById("color_ring_1_select");
+					var colorRing2Select = document.getElementById("color_ring_2_select");
+					var colorBgInSelect = document.getElementById("color_bg_in_select");
+					var colorBgOutSelect = document.getElementById("color_bg_out_select");
+					var showDaySelect = document.getElementById("show_day_select");
+					var showDateSelect = document.getElementById("show_date_select");
+					var vibeBtSelect = document.getElementById("vibe_bt_select");
+					
+					colorTextSelect.value = getQueryVariable("color_text_select");
+					colorIndicatorSelect.value = getQueryVariable("color_indicator_select");
+					colorRing1Select.value = getQueryVariable("color_ring_1_select");
+					colorRing2Select.value = getQueryVariable("color_ring_2_select");
+					colorBgInSelect.value = getQueryVariable("color_bg_in_select");
+					colorBgOutSelect.value = getQueryVariable("color_bg_out_select");
+					showDaySelect.checked = (getQueryVariable("show_day_select") === 'true');
+					showDateSelect.checked = (getQueryVariable("show_date_select") === 'true');
+					vibeBtSelect.checked = (getQueryVariable("vibe_bt_select") === 'true');
+				}				
 			}
 	
 			function saveOptions() {
