@@ -1,0 +1,51 @@
+{
+    "appKeys": {
+        "KEY_COLOR_BG_IN": 5,
+        "KEY_COLOR_BG_OUT": 6,
+        "KEY_COLOR_INDICATOR": 2,
+        "KEY_COLOR_RING_1": 3,
+        "KEY_COLOR_RING_2": 4,
+        "KEY_COLOR_TEXT": 1,
+        "KEY_SHOW_DATE": 8,
+        "KEY_SHOW_DAY": 7,
+        "KEY_VIBE_BT": 9
+    },
+    "capabilities": [
+        "configurable"
+    ],
+    "companyName": "Robinhuett",
+    "longName": "circumflexus",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/menu_icon.png",
+                "menuIcon": true,
+                "name": "IMAGE_MENU_ICON",
+                "type": "png"
+            },
+            {
+                "characterRegex": "[0-9:]",
+                "file": "fonts/Roboto-Regular.ttf",
+                "name": "FONT_ROBOTO_REGULAR_38",
+                "type": "font"
+            },
+            {
+                "characterRegex": "[0-9a-zA-Z/:]",
+                "file": "fonts/Roboto-Regular.ttf",
+                "name": "FONT_ROBOTO_REGULAR_16",
+                "type": "font"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "circumflexus",
+    "targetPlatforms": [
+        "basalt"
+    ],
+    "uuid": "1ee7ba1c-6b9c-4306-886c-3d3f47c1a1e5",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
